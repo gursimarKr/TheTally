@@ -14,7 +14,7 @@ const IndexPage = () => (
     <div className="container">
     <Header/>
       <div className="row justify-content-md-center">
-        <h1 style={{textTransform:'uppercase',alignItems:'left'}}>Your parenting questions.</h1><h1 style={{textTransform:'uppercase'}}> Answered by <span style={{fontWeight:700,color:'yellow'}}>40,000</span> + parents</h1>
+        <h1 style={{textTransform:'uppercase',alignItems:'left'}}>Your parenting questions.</h1><h1 style={{textTransform:'uppercase'}}> Answered by <span style={{fontWeight:700}}>40,000</span> + parents</h1>
       <InputGroup className="mb-3">
     <FormControl
       placeholder="show me the top ranked"
