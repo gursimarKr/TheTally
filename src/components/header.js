@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import {Navbar, Nav, NavDropdown,Form,Button,FormControl} from 'react-bootstrap'
+import {Navbar, Nav, Dropdown,NavDropdown,Form,Button,FormControl,InputGroup,DropdownButton} from 'react-bootstrap'
+import headerStyles from '../components/header.module.css';
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -9,29 +10,32 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-   <Navbar  expand="xl">
-  <Navbar.Brand href="#home">The Tally</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
+ <Navbar collapseOnSelect expand="lg" >
+  <Navbar.Brand style={{fontSize: '40px',
+    fontWeight: 700,
+    marginRight: '62px'}} href="#home" className={headerStyles.text}><span className={headerStyles.italic}>The</span> Tally</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse className={headerStyles.links} id="responsive-navbar-nav">
     <Nav className="mr-auto">
-    <Nav.Link href="#home">BROWSE BY AGE</Nav.Link>
-    <Nav.Link href="#home">BROWSE BY CATEGORY</Nav.Link>
-    <Nav.Link href="#home">BLOG</Nav.Link>
-    <Nav.Link href="#home">LOGIN</Nav.Link>
-      <Nav.Link href="#link">REGISTER</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      <Nav.Link style={{marginRight:'40px',color:'black'}} href="#features">Browse by age</Nav.Link>
+      <Nav.Link href="#pricing" style={{marginRight:'40px',color:'black'}}>Browse by category</Nav.Link>
+      <Nav.Link href="#pricing" style={{marginRight:'40px',color:'black'}}>Blog</Nav.Link>
+      
+    </Nav>
+    <Nav className="mr-auto">
+      <Nav.Link href="#deets" style={{marginRight:'40px',color:'black'}}>Login</Nav.Link>
+      <Nav.Link eventKey={2} href="#memes" style={{marginRight:'40px',color:'black'}}>
+        Register
+      </Nav.Link>
+      <NavDropdown title="Sydney" id="dropdown-basic" style={{marginRight:'40px',color:'black'}}>
+        <NavDropdown.Item href="#action/3.1">Melbourne</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Perth</NavDropdown.Item>
       </NavDropdown>
     </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
-    </Form>
   </Navbar.Collapse>
+  <Form inline>
+      <Button variant="outline-primary">Search</Button>
+    </Form>
 </Navbar>
   </header>
 )

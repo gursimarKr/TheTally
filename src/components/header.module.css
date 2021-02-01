@@ -1,0 +1,13 @@
+.text{
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 42px;
+}
+.italic{
+    font-style: italic;
+}
+.links{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
