@@ -1,16 +1,14 @@
-import { Link } from "gatsby"
+import React from 'react'
 import PropTypes from "prop-types"
-import React from "react"
+import {navigate} from 'gatsby'
 import {Navbar, Nav, Dropdown,NavDropdown,Form,Button,FormControl,InputGroup,DropdownButton} from 'react-bootstrap'
 import headerStyles from '../components/header.module.css';
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-     
-      marginBottom: `1.45rem`,
-    }}
-  >
- <Navbar collapseOnSelect expand="lg" >
+import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
+
+const header = () => {
+  return (
+    <div>
+      <Navbar collapseOnSelect expand="lg" >
   <Navbar.Brand style={{fontSize: '40px',
     fontWeight: 700,
     marginRight: '62px'}} href="#home" className={headerStyles.text}><span className={headerStyles.italic}>The</span> Tally</Navbar.Brand>
@@ -34,18 +32,10 @@ const Header = ({ siteTitle }) => (
     </Nav>
   </Navbar.Collapse>
   <Form inline>
-      <Button variant="outline-primary">Search</Button>
+      <Button onClick={()=>navigate("/")} variant="outline-primary"><FaSearch/></Button>
     </Form>
 </Navbar>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+    </div>
+  )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default header 

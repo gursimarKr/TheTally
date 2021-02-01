@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^4.6.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
@@ -19,7 +20,7 @@
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "react-horizontal-scrolling-menu": "^0.7.8"
+    "react-icons": "^4.1.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
