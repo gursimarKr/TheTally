@@ -8,6 +8,7 @@ import {InputGroup,FormControl,Button, Container, Form, Row, Col} from 'react-bo
 import SEO from "../components/seo"
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import indexStyles from './index.module.css'
+import HorizontalCategories from "../components/HorizontalCategories";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -27,6 +28,7 @@ const IndexPage = () => (
         </InputGroup.Append>
       </InputGroup>
       </Form>
+      <HorizontalCategories/>
       </div>
       <Row>
         <h1 className={indexStyles.uppercaseText}>How does the tally work?</h1>
