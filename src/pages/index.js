@@ -12,7 +12,6 @@ import HorizontalCategories from "../components/HorizontalCategories";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h3> Lets go for a <FaSearch />? </h3>
     <div className={indexStyles.searchContainer}>
     <Container>
       <h1 className={indexStyles.headingText} style={{alignItems:'left'}}>Your parenting questions.</h1><h1 className={indexStyles.headingText} style={{textTransform:'uppercase'}}> Answered by <span style={{fontWeight:700}}>40,000</span> + parents</h1>
@@ -42,9 +41,10 @@ const IndexPage = () => (
       <Col><img src="" alt="pan" /><p className={indexStyles.tallyWorkText}>Lorem in tempor in incididunt non dolore magna pariatur adipisicing proident sunt veniam.</p></Col>
       </Row>
       <Row>
-      <Col>
+      <Col className={indexStyles.background}>
       <h1 className={indexStyles.uppercaseText}>browse by age</h1>
       <p className={indexStyles.largeText}>Irure dolore ad ut adipisicing tempor veniam magna anim esse velit in do aliqua sunt.</p>
+      <HorizontalCategories/>
       </Col>
       <Col></Col>
       </Row>

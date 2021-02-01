@@ -1,0 +1,8 @@
+.cardContainer{
+    width: 300px;height:200px;border-radius:20px;padding:10px;
+}
+.cardContent{
+}
+.buttonstyle{
+    align-items:right;color:white;background-color:#f0c195;border-radius:25px
+}
