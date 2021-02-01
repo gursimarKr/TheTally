@@ -7,9 +7,9 @@ const primaryLayout = (props) => {
     return (
         <div>
             <Header/>
-            <Container>
+            {/* <Container> */}
                 {props.children}
-            </Container>
+            {/* </Container> */}
             <Footer/>
         </div>
     )

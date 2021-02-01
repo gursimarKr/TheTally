@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Button, Row, Col, InputGroup, Form, FormControl } from 'react-bootstrap';
+import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
 
 import FooterStyles from '../components/footer.module.css';
 const Footer = () => {
@@ -38,7 +39,7 @@ const Footer = () => {
                     type="email"
                     placeholder="Email address"/>
                     <InputGroup.Append>
-                        <Button><i className="fas fa-arrow-right"></i></Button>
+                        <Button><FaArrowRight/></Button>
                     </InputGroup.Append>
                 </InputGroup>
             </Form>

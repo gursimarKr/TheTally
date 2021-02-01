@@ -1,0 +1,45 @@
+.topRankedSearch{
+}
+.topRankedContainer{
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+.searchContainer{
+}
+.inputbar{
+}
+.topRankedText{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+.uppercaseText{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    width:50%
+}.headingText{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+}
+.largeText{
+    font-size: 25px;
+    font-weight: 400;
+
+}
+.tallyWorkText{
+    font-weight: 600;
+    font-size: 25px;
+}
+.grey{
+    color: gray;
+}
+.blue{
+    color: #34b7eb;
+}
+.searchQuestion{
+ background-color: #34b7eb;
+ padding-top: 4%;
+ padding-bottom: 5%;
+}
