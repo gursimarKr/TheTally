@@ -1,0 +1,60 @@
+.catContent{
+    width: 210px;
+    height: 230px;
+    border: 1px solid black;
+    border-radius: 6px;
+    position: relative;
+    background-color: white;
+    box-shadow: 2px 5px 18px #000000
+}
+.catImage{
+    /* border:1px solid black; */
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20%;
+    top: -108px;
+    left: -25px;
+}
+.catText{
+    position: absolute;
+    margin-top: 54%;
+    margin-bottom: 12%;
+    padding: 10px 10px 0 10px;
+    
+}
+.catText h1{
+    font-size:18px;
+}
+.btnOutline{
+    border-radius: 25px;
+    background-color:#e48022 ;
+    color:white;
+    border-color: #f0c195;
+}.btnOutline:hover{
+    background-color: #f0c195;
+    border-color: #f0c195;
+    color: #e62740;
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .thumbnailImg{
+    width: 35%;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+     }
+
+
+
+@media (max-width: 575.98px) { 
+    .thumbnailImg{
+    width: 30%;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+ }

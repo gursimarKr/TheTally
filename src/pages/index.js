@@ -18,6 +18,7 @@ import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import indexStyles from './index.module.css'
 import HorizontalCategories from "../components/HorizontalCategories";
 import Posts from "../components/Posts";
+import CategoryPost from "../components/CategoryPost";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -92,8 +93,15 @@ const IndexPage = () => (
       <h1 className={indexStyles.uppercaseText}>browse by category</h1>
       <p className={indexStyles.largeText}>Non sit tempor in aliqua culpa occaecat veniam et veniam magna dolore.</p>
       </Col>
-      <Col><Posts/></Col>
-      <Col><Posts/></Col>
+      <Col><CategoryPost/></Col>
+      <Col><CategoryPost/></Col>
+      <Col><CategoryPost/></Col>
+      </Row>
+      <Row>
+      <Col><CategoryPost/></Col>
+      <Col><CategoryPost/></Col>
+      <Col><CategoryPost/></Col>
+      <Col><CategoryPost/></Col>
       </Row>
       </Container>
       </div>

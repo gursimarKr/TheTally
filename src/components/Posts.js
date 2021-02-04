@@ -9,8 +9,8 @@ const Posts = () => {
             <Card className={postStyles.cardContainer}>
                 {/* <div className={postStyles.cardContent}></div> */}
                 <Card.Img className={postStyles.postImg} variant="left" src={child} />
-                <Card.Body>
-                    <span>Card Title</span>
+                <Card.Body className={postStyles.cardText}>
+                    <h1 className="text-left" style={{fontSize:'23px'}}>Toddlers</h1>
 
                     <Button className={postStyles.buttonstyle} ><FaArrowRight/></Button>
                 </Card.Body>

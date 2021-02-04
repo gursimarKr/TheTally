@@ -2,12 +2,17 @@
     width: 285px;
     height:260px;
     border-radius:20px;padding:10px;box-shadow: 2px 5px 18px #000000;
+    position: relative;
 }
 .cardContent{
 }
 .buttonstyle{
-    align-items:right;color:white;background-color:#f0c195;border-radius:25px;
-    margin-left: 85%;
+    align-items:right;color:white;background-color:#f0c195;border-radius:25px;border-color: #f0c195
+    ;margin-top: 50%;
+    margin-left: 205%;
+}
+.buttonstyle:hover{
+    color:white;background-color:#744820;border-color: #855324;
 }
 .container{
     
@@ -15,4 +20,10 @@
 .postImg{
     width: 231px;
     height: 187px;
+    position: absolute;
+    top:-62px;
+}
+.cardText{
+    position: absolute;
+    margin-top: 35%;
 }
