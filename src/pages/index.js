@@ -23,7 +23,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div  className={indexStyles.searchContainer}>
       <div style={{backgroundImage:`url(${searchImage})`}}>
-        <Container fluid={md}>
+        <Container fluid>
           <div className={indexStyles.headingContainer}>
           <h1 className={indexStyles.headingText} style={{alignItems:'left'}}>
             Your parenting questions.</h1>
