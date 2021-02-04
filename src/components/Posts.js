@@ -2,14 +2,16 @@ import React from 'react'
 import {Card, Button} from 'react-bootstrap';
 import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
 import postStyles from './posts.module.css';
+import child from '../images/child3.png'
 const Posts = () => {
     return (
-        <div className="container">
+        <div className={postStyles.container}>
             <Card className={postStyles.cardContainer}>
-                <div className={postStyles.cardContent}></div>
-                <Card.Img variant="top" src="icon-48x48.png" />
+                {/* <div className={postStyles.cardContent}></div> */}
+                <Card.Img className={postStyles.postImg} variant="left" src={child} />
                 <Card.Body>
-                    <Card.Title><h2>Card Title</h2></Card.Title>
+                    <span>Card Title</span>
+
                     <Button className={postStyles.buttonstyle} ><FaArrowRight/></Button>
                 </Card.Body>
             </Card>

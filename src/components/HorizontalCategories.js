@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import ScrollMenu from 'react-horizontal-scrolling-menu';
 import HorizontalCategoriesStyles from '../components/categories.module.css'
 import Posts from './Posts';
+import { FaArrowLeft } from "@react-icons/all-files/fa/FaArrowLeft";
+import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
+
 // list of items
 const list = [
     { name: <Posts/> },
@@ -50,8 +53,8 @@ const list = [
   };
   
   
-  const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
-  const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+  const ArrowLeft = Arrow({ text: <FaArrowLeft/>, className: HorizontalCategoriesStyles.arrowprev });
+  const ArrowRight = Arrow({ text: <FaArrowRight/>, className: HorizontalCategoriesStyles.arrownext });
 class HorizontalCategories extends Component {
     state = {
         selected: 0
@@ -67,7 +70,7 @@ class HorizontalCategories extends Component {
     const menu = Menu(list, selected);
         return (
             <div>
-                <ScrollMenu
+                <ScrollMenu style={{paddingTop:'20%'}}
           data={menu}
           arrowLeft={ArrowLeft}
           arrowRight={ArrowRight}

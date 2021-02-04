@@ -1,8 +1,18 @@
 .cardContainer{
-    width: 300px;height:200px;border-radius:20px;padding:10px;
+    width: 285px;
+    height:260px;
+    border-radius:20px;padding:10px;box-shadow: 2px 5px 18px #000000;
 }
 .cardContent{
 }
 .buttonstyle{
-    align-items:right;color:white;background-color:#f0c195;border-radius:25px
+    align-items:right;color:white;background-color:#f0c195;border-radius:25px;
+    margin-left: 85%;
+}
+.container{
+    
+}
+.postImg{
+    width: 231px;
+    height: 187px;
 }
