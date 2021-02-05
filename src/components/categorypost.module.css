@@ -31,6 +31,11 @@
     background-color:#e48022 ;
     color:white;
     border-color: #f0c195;
+}
+.btnOutline:focus{
+    background-color: #f0c195;
+    border-color: #f0c195;
+    color: #e62740;
 }.btnOutline:hover{
     background-color: #f0c195;
     border-color: #f0c195;

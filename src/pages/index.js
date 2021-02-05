@@ -39,7 +39,7 @@ const IndexPage = () => (
                 placeholder="show me the top ranked..."
               />
               
-                <Button className={indexStyles.topRankedButton} variant="outline-secondary"><FaSearch/></Button>
+                <Link to="/searchResult"><Button className={indexStyles.topRankedButton} variant="outline-secondary"><FaSearch/></Button></Link>
             </InputGroup>
             </Form>
             </div>
@@ -152,7 +152,7 @@ Avoid</p></Col>
             <FormControl className={indexStyles.searchInput}
             placeholder="What are you looking for?"
             />
-          <Button className={indexStyles.searchButton} variant="outline-secondary"><FaSearch/></Button>
+          <Link to="/searchResult"><Button className={indexStyles.searchButton} variant="outline-secondary"><FaSearch/></Button></Link>
           </InputGroup>
             </Form>
             </Col>
