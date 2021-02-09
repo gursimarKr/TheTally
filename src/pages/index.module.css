@@ -13,11 +13,14 @@
     color: white;
 
 }
+.searchInput:focus{
+    outline:none;
+}
 .topRankedSearch input:focus {
     outline: none !important;
 }
 .searchButton{
-    margin-top: -3%;
+    margin-top: -39%;
     border-radius: 50px;
     width: 90px;
     height: 90px;
@@ -47,6 +50,7 @@
 }
 .uppercaseText{
     text-transform: uppercase;
+    font-family: 'Roboto';
     font-size: 45px;
     font-weight: 700;
     width:50%
@@ -64,6 +68,7 @@
 .tallyWorkText{
     font-weight: 600;
     font-size: 25px;
+    font-family: 'Roboto';
 }
 .grey{
     color: gray;
@@ -140,20 +145,51 @@
 .finalText{
     margin-top: 30px;
 }
+.tallyWorkHeading{
+    font-size:75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 70%;
+}
+.headerText{
+    text-transform: uppercase;
+    font-size: 74px;
+    color: white;
+}
 .headingContainer{
     margin-top: 2%;
     padding-top: 5%;
+    position:relative;
 }
 .topRankedButton{
-    margin-top: -3%;
+    margin-top: -41%;
     width: 50px;
     height: 50px;
     border-radius: 25px;
     color:white;background-color:#f0c195;
 }
+.topRankedButton :hover{
+    color:white;background-color:#f0c195;
+    
+}.topRankedButton :focus{
+    color:white;background-color:#f0c195;
+    
+}
 .searchButton ::placeholder{
     color:white;
     opacity: 1;
+}
+.categoryText{
+    font-size:65px;
+    font-family: 'Roboto';
+    color:white;
+    text-transform: uppercase;
+}
+.categoryLargeText{
+    font-size: 35px;
+    color:white;
+    font-family: 'Sofia Pro';
+    line-height: 1.1;
 }
 .workConatiner img{
     width: 70px;

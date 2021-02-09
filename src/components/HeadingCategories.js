@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
 import ScrollMenu from 'react-horizontal-scrolling-menu';
-import HorizontalCategoriesStyles from '../components/categories.module.css'
-import Posts from './Posts';
+import headingCategoriesStyles from '../components/headingCategories.module.css'
+import HeadingPost from './HeadingPost';
 import { FaArrowLeft } from "@react-icons/all-files/fa/FaArrowLeft";
 import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
 
 // list of items
 const list = [
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> },
-    { name: <Posts/> }
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> },
+    { name: <HeadingPost/> }
   ];
   
   // One item component
@@ -23,7 +23,7 @@ const list = [
   const MenuItem = ({ text, selected }) => {
     return (
       <div
-        className={HorizontalCategoriesStyles.menuItem}
+        className={headingCategoriesStyles.menuItem}
       >
         {text}
       </div>
@@ -53,9 +53,9 @@ const list = [
   };
   
   
-  const ArrowLeft = Arrow({ text: <FaArrowLeft/>, className: HorizontalCategoriesStyles.arrowprev });
-  const ArrowRight = Arrow({ text: <FaArrowRight/>, className: HorizontalCategoriesStyles.arrownext });
-class HorizontalCategories extends Component {
+  const ArrowLeft = Arrow({ text: <FaArrowLeft/>, className: headingCategoriesStyles.arrowprev });
+  const ArrowRight = Arrow({ text: <FaArrowRight/>, className: headingCategoriesStyles.arrownext });
+class HeadingCategories extends Component {
     state = {
         selected: 0
       };
@@ -69,7 +69,7 @@ class HorizontalCategories extends Component {
     // Create menu from items
     const menu = Menu(list, selected);
         return (
-            <div className={HorizontalCategoriesStyles.categoryBox}>
+            <div className={headingCategoriesStyles.categoryBox}>
                 <ScrollMenu style={{paddingTop:'20%'}}
           data={menu}
           arrowLeft={ArrowLeft}
@@ -81,4 +81,4 @@ class HorizontalCategories extends Component {
         )
     }
 }
-export default HorizontalCategories
+export default HeadingCategories

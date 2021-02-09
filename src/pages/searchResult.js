@@ -25,7 +25,7 @@ const searchResult = () => {
                         <div className="row mb-md-4 mb-4 mt-4">
                             <div className="col-md-12 d-flex flex-wrap">
                             <h1>Elit ullamco et ad excepteur ut do duis adipisicing.</h1>
-                            <Dropdown className=" ml-4 mt-2">
+                            <Dropdown className="ml-4 mt-2">
                                     <Dropdown.Toggle>
                                        Cities
                                     </Dropdown.Toggle>
@@ -41,7 +41,7 @@ const searchResult = () => {
                         <div className="row">
                             <div className="col-sm-12 mb-4">
                                 <div className={searchResultStyles.unitContainer}>
-                                    <div className="d-flex">
+                                    <div className="d-flex align-items-center">
                                     
                                     <div className={searchResultStyles.numbers}>
                                        <p className="">1</p> 
@@ -65,7 +65,7 @@ const searchResult = () => {
                         <div className="row">
                             <div className="col-sm-12 mb-4">
                                 <div className={searchResultStyles.unitContainer}>
-                                    <div className="d-flex">
+                                    <div className="d-flex align-items-center">
                                     {/* ...can add align-items-center */}
                                     <div className={searchResultStyles.numbers}>
                                        <p className="">2</p> 

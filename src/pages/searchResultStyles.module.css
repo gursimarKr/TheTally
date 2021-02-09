@@ -6,6 +6,7 @@
     font-size: 15px;
     color: #34b7eb;
     font-weight: 600;
+    margin-top: -5px;
 }
 .unitTag{
     padding-left: 4%;
@@ -21,6 +22,7 @@
     display: inline-block;
     padding: 2px 1px 1px 17px;
     margin-right: 1%;
+    margin-top: -9px;
 }
 .searchTags{
     border: 2px solid #34b7eb;

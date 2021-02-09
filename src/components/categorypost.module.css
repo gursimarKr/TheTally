@@ -32,6 +32,10 @@
     color:white;
     border-color: #f0c195;
 }
+.categoryBox{
+    position: absolute;
+    margin-top: 5%;
+}
 .btnOutline:focus{
     background-color: #f0c195;
     border-color: #f0c195;

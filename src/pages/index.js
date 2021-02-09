@@ -17,6 +17,7 @@ import SEO from "../components/seo"
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import indexStyles from './index.module.css'
 import HorizontalCategories from "../components/HorizontalCategories";
+import HeadingCategories from '../components/HeadingCategories';
 import Posts from "../components/Posts";
 import CategoryPost from "../components/CategoryPost";
 const IndexPage = () => (
@@ -24,12 +25,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div  className={indexStyles.searchContainer}>
       <div style={{backgroundImage:`url(${searchImage})`}}>
-        <Container fluid>
+        <Container fluid className="pl-5 ml-2">
           <div className={indexStyles.headingContainer}>
-          <h1 className={indexStyles.headingText} style={{alignItems:'left'}}>
+          <h1 className={indexStyles.headerText}>
             Your parenting questions.</h1>
-            <h1 className={indexStyles.headingText} style={{textTransform:'uppercase'}}> Answered by 
-            <span style={{fontWeight:700, color:'#f09622'}}> 40,000</span> + parents.</h1>
+            <h1 className={indexStyles.headerText}> Answered by 
+            <span style={{fontWeight:700, color:'#FFA145'}}> 40,000</span> + parents.</h1>
             <div className={indexStyles.topRankedContainer}>
               <Form>
               
@@ -47,30 +48,33 @@ const IndexPage = () => (
             
         </Container>
         <div className={indexStyles.categories}>
-            <HorizontalCategories/>
+            <HeadingCategories/>
             </div>
         </div>
       
-      <Container className={indexStyles.workConatiner} style={{marginTop:'4%', marginBottom:'4%'}}>
+     <Container fluid className={indexStyles.workConatiner} style={{marginTop:'4%', marginBottom:'4%', marginLeft:'3%'}}>
       <Row>
-        <h1 className={indexStyles.uppercaseText}>How does the tally work?</h1>
+        <h1 className={indexStyles.tallyWorkHeading}>How does the tally work?</h1>
         <p className={`${indexStyles.largeText} ${indexStyles.grey}`}>Save yourself from the overwhelm of google search results, or the well meaning opinions of your small group of friends. Here you can access recommendations from literally tens of thousands of parents, that answer the most frequently asked parenting questions. </p>
       </Row>
-      <Row>
+      <Row className="mt-5 mb-4">
       <Col>
-      <img src={workOne} alt="pan" /> <p className={indexStyles.tallyWorkText}>Search for the specific recommendations</p>
+      <img className="mb-4" src={workOne} alt="pan" /> <p className={indexStyles.tallyWorkText}>Search for the specific recommendations</p>
       </Col>
-      <Col><img src={workTwo} alt="pan" /><p className={indexStyles.tallyWorkText}>Browse by your child’s age or your parenting stage</p></Col>
-      <Col><img src={workThree} alt="pan" /><p className={indexStyles.tallyWorkText}>Browse by category of recommendation</p></Col>
+      <Col><img className="mb-4" src={workTwo} alt="pan" /><p className={indexStyles.tallyWorkText}>Browse by your child’s age or your parenting stage</p></Col>
+      <Col><img className="mb-4" src={workThree} alt="pan" /><p className={indexStyles.tallyWorkText}>Browse by category of recommendation</p></Col>
       </Row>
       </Container>
+      
       <div className={indexStyles.ageContainer}>
       <div className={indexStyles.ageBackground}>
         <Container>
           <Row>
             <div className={indexStyles.ageContainerText}>
           <h1 className={indexStyles.uppercaseText}>browse by age</h1>
-      <p className={indexStyles.largeText}>Velit sunt enim exercitation et commodo ipsum.Nostrud ullamco Lorem ullamco laborum eu aute ipsum irure in culpa ut.</p>
+      <p className={indexStyles.largeText}>Lorem ipsum dolor sit amet, consetetur 
+sadipscing elitr, sed diam nonumy
+eirmod tempor invidunt ut</p>
       
       </div> 
       
@@ -90,8 +94,11 @@ const IndexPage = () => (
       <Container>
       <Row>
       <Col>
-      <h1 className={indexStyles.uppercaseText}>browse by category</h1>
-      <p className={indexStyles.largeText}>Non sit tempor in aliqua culpa occaecat veniam et veniam magna dolore.</p>
+      <h1 className={indexStyles.categoryText}>browse by category</h1>
+      <p className={indexStyles.categoryLargeText}>Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr,
+sed diam nonumy eirmod 
+tempor invidunt ut</p>
       </Col>
       <Col><CategoryPost/></Col>
       <Col><CategoryPost/></Col>
@@ -107,18 +114,18 @@ const IndexPage = () => (
       </div>
       <div className="container md-6">
       <div className={indexStyles.latestContent} style={{paddingTop:'5%',paddingBottom:'5%'}}>
-      <Row>
+      <Row className="mb-5">
         <Col><h1 className={`${indexStyles.uppercaseText} ${indexStyles.blue}`}>our latest<br/> articles</h1></Col>
       </Row>
       <Row>
       <Col>
-        <Row>
+        <Row className="mb-5">
         <Col><img  src={articleOne} alt="pan" /></Col>
         <Col className="mt-5 mb-4"><p>Do you know how to manage your Eczema?</p></Col>
         </Row>
         </Col>
         <Col>
-        <Row>
+        <Row className="mb-4">
         <Col><img  src={articleTwo} alt="pan" /></Col>
         <Col className="mt-5 mb-4"><p>Lorem Ipsum is simply dummy text of the printing & typesetting</p></Col>
         </Row>
@@ -149,7 +156,7 @@ Avoid</p></Col>
             <span className={indexStyles.largeText}>WHAT</span>
             <Form>
             <InputGroup size="lg" className={indexStyles.inputbar}>
-            <FormControl className={indexStyles.searchInput}
+            <FormControl className={indexStyles.searchInput} style={{outline:'none'}}
             placeholder="What are you looking for?"
             />
           <Link to="/searchResult"><Button className={indexStyles.searchButton} variant="outline-secondary"><FaSearch/></Button></Link>

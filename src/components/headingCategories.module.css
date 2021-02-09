@@ -1,0 +1,24 @@
+.menuItem {
+    padding: 0 40px;
+    margin: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+  }
+  .menuItemWrapper.active {
+    border: 1px blue solid;
+  }
+  .menuItem.active {
+    border: 1px green solid;
+  }
+  
+  .scrollMenuArrow {
+    padding: 20px;
+    cursor: pointer;
+  }
+  .arrowprev,.arrownext{
+    margin-top: 13%;
+    font-size: 28px;
+    color: gray;
+    position: absolute;
+  }
