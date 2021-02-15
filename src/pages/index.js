@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import {InputGroup,FormControl,Button, Container, Form, Row, Col} from 'react-bootstrap';
+import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import {InputGroup,FormControl,Button, Container, Form, Row, Col} from 'react-bootstrap';
 import searchImage from '../images/search.png'
 import articleOne from '../images/articleFour.png'
 import articleTwo from '../images/articleOne.png'
@@ -14,7 +15,6 @@ import workTwo from '../images/workTwo.png'
 import workThree from '../images/workOne.png'
 import kateNat from '../images/kateNat.png'
 import SEO from "../components/seo"
-import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import indexStyles from './index.module.css'
 import HorizontalCategories from "../components/HorizontalCategories";
 import HeadingCategories from '../components/HeadingCategories';
@@ -91,9 +91,9 @@ eirmod tempor invidunt ut</p>
       
       </div>
       <div className={indexStyles.categoryContainer}>
-      <Container>
+      <Container fluid className="pl-5 ml-5">
       <Row>
-      <Col>
+      <Col md={4}>
       <h1 className={indexStyles.categoryText}>browse by category</h1>
       <p className={indexStyles.categoryLargeText}>Lorem ipsum dolor sit amet,
 consetetur sadipscing elitr,

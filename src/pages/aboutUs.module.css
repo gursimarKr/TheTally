@@ -1,0 +1,176 @@
+.heading{
+    background-image: linear-gradient(to right, #34AED5 , #26AEAC);
+    /* font-size:700; */
+    padding: 2%;
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 70px;
+}
+.heading h2{
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 70px;
+}
+.headText{
+    font-family: 'Roboto';
+    font-size: 30px;
+    line-height: 1.3;
+}
+.greyContainer p{
+    font-family: 'Roboto';
+    font-size: 24px;
+}.greyContainer span{
+    font-family: 'Roboto';
+    font-size: 39px;
+    margin-left: 6px;
+    padding: 3px;
+}.greyContainer h2{
+    font-family: 'Roboto';
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+}
+.greyBox{
+    background-color: #E8E8E8;
+}
+.vl{
+    border-left: 1px solid #D0D0D0;
+    height: 100px;
+    margin-left: 90px;
+}
+.greyImage{
+    width: 84x;
+    height: 82px;
+}
+.kateImage{
+    width: 524px;
+    height: 524px;
+    border-radius: 158px;
+}
+.finalDesignation{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: -14px;
+}
+.finalImage{
+    width:286px;
+    height:286px;
+}
+.teamPara{
+    text-align:center;
+    font-size: 25px;
+    margin-bottom: 4%;
+    margin-top: 3%;
+    font-family: 'Roboto';
+}
+.teamHead{
+    text-align:center;
+    /* margin-bottom: 4%; */
+    margin-top: 3%;
+}
+.finalContainer{
+    margin-top:20%;
+}
+.finalPara{
+    margin-top: 25%;
+    color: #272727;
+    font-size: 19px;
+    font-family: 'Roboto';
+    padding-right: 32%;
+}
+.Name{
+    font-size: 28px;
+    margin-bottom: 5%;
+}
+
+/* search */
+.searchQuestion{
+    background-color: #34b7eb;
+    padding-top: 4%;
+ padding-bottom: 5%;
+ color: white;
+}.searchButton ::placeholder{
+    color:white;
+    opacity: 1;
+}.largeText{
+    font-size: 25px;
+    font-weight: 400;
+
+}.uppercaseText{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    width:50%;
+}
+.searchInput:focus{
+    outline:none;
+}
+.searchInput{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #34b7eb;
+    color: white;
+
+}
+.searchButton{
+    margin-top: -39%;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    color: #34b7eb;
+    font-size: 28px;
+}
+.teamText{
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: #585858;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .thumbnailImg{
+    width: 40%;
+    }
+    .kateImage{
+        /* margin-left: 4%; */
+        width: 500px;
+        height: 500px;
+        margin-top: -9%;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .thumbnailImg{
+    width: 35%;
+    }
+    .kateImage{
+        /* margin-left: 4%; */
+        width: 400px;
+        height: 400px;
+        margin-top: -16%;
+    }
+    h3{
+        font-size: 1rem;
+    }
+
+     }
+
+
+
+@media (max-width: 575.98px) { 
+    .thumbnailImg{
+    width: 30%;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+ }
