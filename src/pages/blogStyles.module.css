@@ -1,0 +1,25 @@
+.heading{
+    background-image: linear-gradient(to right, #34AED5 , #26AEAC);
+    /* font-size:700; */
+    padding: 2%;
+    color: white;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 70px;
+}
+.heading p{
+    font-weight: 0;
+    font-family: 'Roboto';
+    font-size: 20px;
+    width: 50%;
+    margin-left: 25%;
+}
+#navdropdown{
+    color: rgb(141, 22, 22);
+    font-weight: bold;
+    background-color: white;
+}
+.eczema{
+    font-size: 20px;
+    padding-right: 23%;
+}

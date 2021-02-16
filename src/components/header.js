@@ -4,7 +4,7 @@ import {navigate} from 'gatsby'
 import {Navbar, Nav, Dropdown,NavDropdown,Form,Button,FormControl,InputGroup,DropdownButton} from 'react-bootstrap'
 import headerStyles from '../components/header.module.css';
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
-
+import {Link} from 'gatsby';
 const header = () => {
   return (
     <div>
@@ -17,7 +17,7 @@ const header = () => {
     <Nav className="mr-auto">
       <Nav.Link style={{marginRight:'40px',color:'black'}} href="#features">Browse by age</Nav.Link>
       <Nav.Link href="#pricing" style={{marginRight:'40px',color:'black'}}>Browse by category</Nav.Link>
-      <Nav.Link href="#pricing" style={{marginRight:'40px',color:'black'}}>Blog</Nav.Link>
+      <Link to="/blog"><Nav.Link href="#blog" style={{marginRight:'40px',color:'black'}}>Blog</Nav.Link></Link>
       
     </Nav>
     <Nav className="mr-auto">
