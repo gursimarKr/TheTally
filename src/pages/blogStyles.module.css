@@ -15,11 +15,87 @@
     margin-left: 25%;
 }
 #navdropdown{
-    color: rgb(141, 22, 22);
-    font-weight: bold;
-    background-color: white;
+    color: rgb(141, 22, 22) !important;
+    font-weight: bold !important;
+    background-color: white !important;
 }
 .eczema{
     font-size: 20px;
     padding-right: 23%;
+}
+.loadMore{
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 7px 27px 7px 27px;
+    border-radius: 20px;
+    border:1px solid grey;
+}.loadMore:focus{
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border:1px solid grey;
+
+}.loadMore:hover{
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border:1px solid grey;
+
+}.loadMore:active{
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+}
+.arrow{
+    background-color :#f0c195;
+    color:white;
+    margin-left: 20px;
+    border-radius: 15px;
+     padding: 0px 1px 2px 1px;
+}
+/* search */
+.searchQuestion{
+    background-color: #34b7eb;
+    padding-top: 4%;
+ padding-bottom: 5%;
+ color: white;
+}.searchButton ::placeholder{
+    color:white;
+    opacity: 1;
+}.largeText{
+    font-size: 25px;
+    font-weight: 400;
+
+}.uppercaseText{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    width:50%;
+}
+.searchInput:focus{
+    outline:none;
+}
+.searchInput{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #34b7eb;
+    color: white;
+
+}
+.searchButton{
+    margin-top: -39%;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    color: #34b7eb;
+    font-size: 28px;
+}
+.teamText{
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: #585858;
 }
