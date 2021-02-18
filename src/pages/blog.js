@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Link } from "gatsby"
-import {InputGroup,FormControl,Button, Container, Form, Row, Col, Dropdown, Image, Card} from 'react-bootstrap';
+import {InputGroup,FormControl,Button, Container, Form, Row, Col, DropdownButton,Dropdown, Image, Card} from 'react-bootstrap';
 import { FaAngleRight } from "@react-icons/all-files/fa/FaAngleRight";
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import blogOne from '../images/blogOne.png';
@@ -22,28 +22,27 @@ const Blog = () => {
                         <div className={BlogStyles.heading}>
                            <h2 className="text-center">Our Blog</h2>
                            <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                          <p> Filter by  <span><Dropdown id={BlogStyles.navdropdown} style={{display:'inline-block', color:'white'}} className="ml-4 mt-2">
-                                    <Dropdown.Toggle>
-                                       Age
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">Melbourne</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Sydney</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Perth</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                    </Dropdown></span>
-                                    <span><Dropdown style={{display:'inline-block'}} id={BlogStyles.navdropdown} className="ml-4 mt-2">
-                                    <Dropdown.Toggle>
-                                       Category
-                                    </Dropdown.Toggle>
-
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">Melbourne</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Sydney</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Perth</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                    </Dropdown></span></p>
+                          <p> Filter by  <span className="ml-4 mt-2">
+                            <DropdownButton 
+                             style={{
+                                         display:'inline-block', backgroundColor:'white',color:'black',listStyle:'none'
+                                     }} 
+                                    class={BlogStyles.navDropdown} title="Age">
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </DropdownButton>
+                                    </span>
+                                    <span className="ml-4 mt-2">
+                                    <DropdownButton style={{
+                                        display:'inline-block',
+                                    }} class={BlogStyles.navDropdown} title="Category">
+                                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            </DropdownButton>
+                                    </span>
+                                    </p>
                         </div> 
                         </Col>
                     </Row>
@@ -55,7 +54,7 @@ const Blog = () => {
                         </Col>
                         <Col md={6} xs={12} className="p-5 text-left">
                             <div className={BlogStyles.eczema}>
-                            <h5>Eczema in Children: 5 Treatments for Babies with Eczema</h5>
+                            <Link to="/BlogDetails"><h5>Eczema in Children: 5 Treatments for Babies with Eczema</h5></Link>
                             <p>Are you worried your little one has eczema? While baby skin is known for being soft, silky, and smooth, infant eczema....</p>
                             <p className="pt-5">22 January, 2021</p>
                             </div>

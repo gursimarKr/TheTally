@@ -14,10 +14,11 @@
     width: 50%;
     margin-left: 25%;
 }
-#navdropdown{
+.navDropdown{
     color: rgb(141, 22, 22) !important;
     font-weight: bold !important;
-    background-color: white !important;
+    background-color: red;
+    display: inline-block !important;
 }
 .eczema{
     font-size: 20px;
