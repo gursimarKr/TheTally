@@ -11,7 +11,7 @@ import blogFour from '../images/blogFour.png';
 import blogFive from '../images/blogFive.png';
 import blogSix from '../images/blogSix.png';
 import blogSeven from '../images/blogSeven.png';
-import BlogStyles from './BlogStyles.module.css'
+import BlogStyles from './blogStyles.module.css'
 const Blog = () => {
     return (
         <div>
