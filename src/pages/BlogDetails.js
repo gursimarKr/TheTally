@@ -11,7 +11,7 @@ const BlogDetails = () => {
         <div>
             <Layout>
                 <Container className={blogDetailsStyles.headContainer} fluid>
-                    <Row>
+                    <Row className="text-center">
                         <Col md={12}><p ><Image fluid className={blogDetailsStyles.headImage} src={blogDetailsOne} alt="pan"/></p></Col>
                     </Row>
                 </Container>
@@ -19,8 +19,8 @@ const BlogDetails = () => {
                     <Row>
                         <Col md={12} sm={6}>
                             <div className={blogDetailsStyles.childSection}>
-                                <FaCaretRight/><span className="mr-5">Kids Health</span>
-                                <FaCaretRight/><span>Child Eczema</span>
+                                <FaCaretRight/><span className="mr-md-2 mr-lg-5">Kids Health</span>
+                                <FaCaretRight/><span className="">Child Eczema</span>
                             </div>
                         </Col>
                     </Row>
@@ -45,7 +45,7 @@ const BlogDetails = () => {
                             </Row>
                             <Row>
                                 <Col>
-                            <p><Image className={blogDetailsStyles.babyImage} src={blogDetailsTwo} alt="pan"/></p>
+                            <p><Image className={blogDetailsStyles.babyImage} src={blogDetailsTwo} alt="pan" fluid/></p>
                                 </Col>
                             </Row>
                             <Row className={blogDetailsStyles.tratmentSectionTwo}>

@@ -34,3 +34,74 @@
 .tratmentSectionTwo ul{
     list-style-type: none;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .thumbnailImg{
+    width: 40%;
+    }
+    .bodyContainer h1{
+        font-size: 27px;
+    }.bodyContainer p,li{
+        font-size: 17px;
+    }.bodyContainer h2{
+        font-size: 25px;
+    }.childSection{
+        margin-top: -4%;
+        font-size: 17px;
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .thumbnailImg{
+    width: 35%;
+    }
+    .babyImage{
+        /* margin-left: 4%; */
+        /* width: 400px; */
+        height: 300px;
+        /* margin-top: -16%; */
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .childSection{
+        margin-top: -12%;
+        font-size: 17px;
+    }
+    .bodyContainer h1{
+        font-size: 30px;
+    }.bodyContainer h2{
+        font-size: 27px;
+    }
+    .bodyContainer p,li{
+        font-size: 20px;
+    }
+    
+     }
+
+
+
+@media (max-width: 575.98px) { 
+    .thumbnailImg{
+    width: 30%;
+    }
+    .babyImage{
+        /* margin-left: 4%; */
+        height: 200px;
+    }
+    .childSection{
+        margin-top: -6%;
+        font-size: 17px;
+    }
+    .bodyContainer h1{
+        font-size: 30px;
+    }.bodyContainer h2{
+        font-size: 27px;
+    }
+    .bodyContainer p,li{
+        font-size: 20px;
+    }.babyImage{
+        height: 332px;
+    }
+ }
