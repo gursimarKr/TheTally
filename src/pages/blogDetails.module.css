@@ -11,12 +11,13 @@
     margin-top: -10%;
     background-color: white;
     border-radius: 10px;
+    padding: 2% 5% 3% 5%
 }
 .bodyContainer h1{
     font-size: 40px;
 }
 .childSection{
-    margin-top:-5%;
+    margin-top:-8%;
     color: white;
     font-size: 29px;
     font-family: 'Roboto';
@@ -34,6 +35,24 @@
 .tratmentSectionTwo ul{
     list-style-type: none;
 }
+/* latest article */
+.latestContent img{
+    width: 215px;
+    height: 215px;
+}
+.latestContent p{
+    font-size: 26px;
+    line-height: 1;
+}.uppercaseText{
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: 700;
+    width:50%
+}
+.blue{
+        color: #34b7eb;
+    }
 @media (min-width: 768px) and (max-width: 991.98px) {
     .thumbnailImg{
     width: 40%;
@@ -45,8 +64,10 @@
     }.bodyContainer h2{
         font-size: 25px;
     }.childSection{
-        margin-top: -4%;
+        margin-top: -9%;
         font-size: 17px;
+    }.bodyContainer{
+        padding: 2% 5% 3% 5%
     }
 
 }
@@ -76,11 +97,57 @@
     }
     .bodyContainer p,li{
         font-size: 20px;
+    }.bodyContainer{
+        padding: 0% 3% 2% 3%;
     }
     
      }
 
+/* search */
+.searchQuestion{
+    background-color: #34b7eb;
+    padding-top: 4%;
+ padding-bottom: 5%;
+ color: white;
+}.searchButton ::placeholder{
+    color:white;
+    opacity: 1;
+}.largeText{
+    font-size: 25px;
+    font-weight: 400;
 
+}.uppercaseText{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    width:50%;
+}
+.searchInput:focus{
+    outline:none;
+}
+.searchInput{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #34b7eb;
+    color: white;
+
+}
+.searchButton{
+    margin-top: -39%;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    color: #34b7eb;
+    font-size: 28px;
+}
+.teamText{
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: #585858;
+}
 
 @media (max-width: 575.98px) { 
     .thumbnailImg{
@@ -103,5 +170,7 @@
         font-size: 20px;
     }.babyImage{
         height: 332px;
+    }.bodyContainer{
+        padding: 0% 3% 2% 3%;
     }
  }

@@ -6,11 +6,11 @@ import FooterStyles from '../components/footer.module.css';
 const Footer = () => {
     return (
         <footer className={FooterStyles.footer}>
-        <Container>
+        <Container className="pt-5">
             <Row>
-            <Col>
-            <h4><span style={{fontStyle:'italic',marginRight:3}}>The</span>Tally</h4>
-            <span>Voluptate ea ea magna fugiat qui pariatur enim.</span>
+            <Col >
+            <h3><span style={{fontStyle:'italic',marginRight:3}}>The</span>Tally</h3>
+            <span className={FooterStyles.headingText}>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</span>
             </Col>
             <Col>
             <h4>Extras</h4>
@@ -30,9 +30,9 @@ const Footer = () => {
             <li>Register</li>
             </ul>
             </Col>
-            <Col>
+            <Col className="mb-2">
             <h4>Join our newsletter to stay up to date</h4>
-            <span>Id aliquip Lorem ut culpa cillum fugiat cillum aute.</span>
+            <span className="mb-4">Id aliquip Lorem ut culpa cillum fugiat cillum aute.</span>
             <Form>
                 <InputGroup>
                     <FormControl
@@ -46,7 +46,12 @@ const Footer = () => {
             </Col>
 
             </Row>
-            
+            <Row>
+                <Col><hr/></Col>
+            </Row>
+            <Row className="text-center">
+                <Col className="mt-3 mb-5"><p>Copyright © 2020 THE TALLY. All rights reserved.</p></Col>
+            </Row>
         </Container>
         </footer>
     )
