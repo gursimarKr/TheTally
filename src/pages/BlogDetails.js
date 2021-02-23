@@ -3,7 +3,7 @@ import Layout from '../components/layout'
 import { Link } from "gatsby"
 import {InputGroup,FormControl,Button, Container, Form, Row, Col, DropdownButton,Dropdown, Image, Card} from 'react-bootstrap';
 import { FaCaretRight } from "@react-icons/all-files/fa/FaCaretRight";
-import { FaSearch } from "@react-icons/all-files/fa/FaCaretRight";
+import {FaSearch} from "@react-icons/all-files/fa/FaCaretRight";
 import blogDetailsOne from '../images/blogDetailsOne.png';
 import blogDetailsTwo from '../images/blogDetailsTwo.png';
 import articleOne from '../images/articleOne.png';
@@ -111,7 +111,7 @@ Avoid</p></Col>
     </div>
                 </Container>
 
-                <div className={blogDetailsStyles.searchQuestion}>
+                {/* <div className={blogDetailsStyles.searchQuestion}>
     <Container>
         <Row>
         <Col><h1 className={blogDetailsStyles.uppercaseText}>search</h1>
@@ -130,7 +130,7 @@ Avoid</p></Col>
         </Row>  
     </Container>   
          
-    </div>
+    </div> */}
             </Layout>
         </div>
     )
