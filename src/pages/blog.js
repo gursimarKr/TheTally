@@ -64,7 +64,7 @@ const Blog = () => {
                 <Container>
                 <Row className="text-center">
                     <Col md={3} sm={6} className="m-4">
-                        <Card style={{ width: '18rem' }}>
+                        <Card className={BlogStyles.cardContainer} style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={blogThree} />
                     <Card.Body className="text-left">
                         <Card.Title>How To Use Essential Oils for Your Baby?</Card.Title>
@@ -78,7 +78,7 @@ const Blog = () => {
                     </Card>
                         </Col> 
                     <Col md={3} sm={6}  className="m-4">
-                        <Card style={{ width: '18rem' }}>
+                        <Card className={BlogStyles.cardContainer} style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={blogFour} />
                     <Card.Body className="text-left">
                         <Card.Title>Is Iodine Essential for Health or Healthy Skin?</Card.Title>
@@ -91,7 +91,7 @@ const Blog = () => {
                     </Card>
                         </Col>
                     <Col md={3} sm={6}  className="m-4">
-                        <Card style={{ width: '18rem' }}>
+                        <Card className={BlogStyles.cardContainer} style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={blogTwo} />
                     <Card.Body className="text-left">
                         <Card.Title>How To Use Essential Oils for Your Baby?</Card.Title>
@@ -107,7 +107,7 @@ const Blog = () => {
                     </Row>
                     <Row className="text-center">
                     <Col md={3} sm={6} className="m-4">
-                        <Card style={{ width: '18rem' }}>
+                        <Card className={BlogStyles.cardContainer} style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={blogFive} />
                     <Card.Body className="text-left">
                         <Card.Title>How to Treat the Eczema in Newborns</Card.Title>
@@ -121,7 +121,7 @@ const Blog = () => {
                     </Card>
                         </Col> 
                     <Col md={3} sm={6}  className="m-4">
-                        <Card style={{ width: '18rem' }}>
+                        <Card className={BlogStyles.cardContainer} style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={blogSix} />
                     <Card.Body className="text-left">
                         <Card.Title>Eczema in Children: 5 Treatments for Babies with Eczema</Card.Title>
@@ -134,7 +134,7 @@ const Blog = () => {
                     </Card>
                         </Col>
                     <Col md={3} sm={6}  className="m-4 ml-sm-5">
-                        <Card style={{ width: '18rem' }}>
+                        <Card className={BlogStyles.cardContainer} style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={blogSeven} />
                     <Card.Body className="text-left">
                         <Card.Title>Why should an asthmatic use an inhaler?</Card.Title>

@@ -1,0 +1,35 @@
+.topContainer ul{
+    text-decoration: none;
+}
+.topContainer ul{
+    list-style-type: none;
+}
+.topImage{
+    position: relative;
+    width: 70%;
+    height: 50%;
+    margin-top: 10%;
+}
+.topContainer h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 60%;
+}
+
+.listItems{
+    list-style-type: none;
+    padding: 0;
+
+}
+.bullets{
+    color: #26AEAC;
+}
+.polygon{
+    position: relative;
+    margin-top: -41%;
+    left: -9%;
+    width: 31%;
+}
+.topContainer{
+    font-family: 'Roboto';
+}
