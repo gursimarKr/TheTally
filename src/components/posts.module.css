@@ -1,15 +1,17 @@
 .cardContainer{
-    width: 285px;
-    height:260px;
-    border-radius:20px;padding:10px;box-shadow: 2px 5px 18px #000000;
+    width: 185px;
+    height:210px;
+    border-radius:20px;padding:10px;box-shadow: 1px 3px 8px #000000;
     position: relative;
+    color: black;
 }
 .cardContent{
 }
 .buttonstyle{
     align-items:right;color:white;background-color:#f0c195;border-radius:25px;border-color: #f0c195
-    ;margin-top: 50%;
-    margin-left: 205%;
+    ;margin-left: 32%
+    /* margin-top: 50%;
+    margin-left: 205%; */
 }
 .buttonstyle:hover{
     color:white;background-color:#744820;border-color: #855324;
@@ -21,9 +23,21 @@
     width: 231px;
     height: 187px;
     position: absolute;
-    top:-29px;
+    top:-29px;margin-left: -17%
 }
 .cardText{
     position: absolute;
-    margin-top: 37%;
+    margin-top: 57%;
+    display: flex;
+    align-items: center;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+}
+@media (max-width: 575.98px) { 
+   
+ }

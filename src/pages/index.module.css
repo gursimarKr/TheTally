@@ -104,7 +104,8 @@
     padding-bottom: 5%;
 }
 .ageContainer{
-    
+    /* position: absolute; */
+    margin-bottom: 22%;
 }
 .ageBackground{
     background-image: linear-gradient(to right,#34b7eb ,  #23baa9);
@@ -114,10 +115,16 @@
     margin-left: -13%;
 }
 .ageContainerText{
-    margin-left: 34%;
+    margin-left: -17%;
     padding:3%;
-    margin-top: 4%;
+    margin-top: -65%;
     color: white;
+    position: relative;
+}
+.ageImage{
+    height: 850px;
+    width: 850px;
+    margin-left: -40%;
 }
 .finalSignature{
     transform: rotate(
@@ -146,7 +153,7 @@
     margin-top: 30px;
 }
 .tallyWorkHeading{
-    font-size:75px;
+    font-size:50px;
     text-transform: uppercase;
     font-weight: 700;
     width: 70%;
@@ -160,6 +167,26 @@
     margin-top: 2%;
     padding-top: 5%;
     position:relative;
+}
+.postItemTwo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 17%;
+}
+.categoryHeadingContainer{
+    margin-left: -2%;
+    margin-bottom: 11%;
+}
+.ageSlider{
+    marginTop: -17%;
+    marginBottom: 20%;
+    position: relative;
+
+}
+.postItem{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7%;
 }
 .topRankedButton{
     margin-top: -41%;
@@ -200,36 +227,59 @@
     line-height: 1.2;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .thumbnailImg{
-    width: 40%;
-    }
+    .tallyWorkHeading{
+        font-size:40px;}
 
-    h3{
-        font-size: 1.5rem;
-    }
+.ageImage{
+    height: 850px;
+    width: 850px;
+    margin-left: -40%;
+}
+.ageContainerText{
+    margin-left: -14%;
+    margin-bottom: 20%;
+    top:-40%;
+}
+.headerText{
+    font-size: 40px;
+}
+.largeText{
+    font-size: 20px;
+    font-weight: 400;
 
 }
-
-
+}
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    .thumbnailImg{
-    width: 35%;
-    }
-
-    h3{
-        font-size: 1rem;
-    }
-
+    .tallyWorkHeading{
+        font-size:30px;
      }
-
-
+     .ageContainerText{
+        margin-left: -14%;
+        margin-bottom: 20%;
+        top:-40%;
+    }
+    .headerText{
+        font-size: 35px;
+    }
+    .largeText{
+        font-size: 15px;
+        font-weight: 400;
+    
+    }
+    }
 
 @media (max-width: 575.98px) { 
-    .thumbnailImg{
-    width: 30%;
+    .tallyWorkHeading{
+        font-size:25px;
+     }
+     .headerText{
+        font-size: 30px;
+    }.largeText{
+        font-size: 15px;
+        font-weight: 400;
+    
     }
-
-    h3{
-        font-size: 1rem;
+    .finalContainer{
+        margin-bottom:7%;
     }
- }
+}

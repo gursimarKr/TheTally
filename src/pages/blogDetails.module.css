@@ -103,7 +103,33 @@
     
      }
 
-/* search */
+
+@media (max-width: 575.98px) { 
+    .thumbnailImg{
+    width: 30%;
+    }
+    .babyImage{
+        /* margin-left: 4%; */
+        height: 200px;
+    }
+    .childSection{
+        margin-top: -6%;
+        font-size: 17px;
+    }
+    .bodyContainer h1{
+        font-size: 30px;
+    }.bodyContainer h2{
+        font-size: 27px;
+    }
+    .bodyContainer p,li{
+        font-size: 20px;
+    }.babyImage{
+        height: 332px;
+    }.bodyContainer{
+        padding: 0% 3% 2% 3%;
+    }
+ }
+ /* search */
 .searchQuestion{
     background-color: #34b7eb;
     padding-top: 4%;
@@ -148,29 +174,3 @@
     font-size: 22px;
     color: #585858;
 }
-
-@media (max-width: 575.98px) { 
-    .thumbnailImg{
-    width: 30%;
-    }
-    .babyImage{
-        /* margin-left: 4%; */
-        height: 200px;
-    }
-    .childSection{
-        margin-top: -6%;
-        font-size: 17px;
-    }
-    .bodyContainer h1{
-        font-size: 30px;
-    }.bodyContainer h2{
-        font-size: 27px;
-    }
-    .bodyContainer p,li{
-        font-size: 20px;
-    }.babyImage{
-        height: 332px;
-    }.bodyContainer{
-        padding: 0% 3% 2% 3%;
-    }
- }

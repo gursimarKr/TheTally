@@ -56,25 +56,20 @@
   border-color: #f0c195;
   color: #e62740;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .catContent{
+    width: 378px;
+    height: 241px;}
+
+}
+
+
 @media (min-width: 576px) and (max-width: 767.98px) { 
-  .thumbnailImg{
-  width: 35%;
-  }
-
-  h3{
-      font-size: 1rem;
-  }
-
+  
    }
 
 
 
 @media (max-width: 575.98px) { 
-  .thumbnailImg{
-  width: 30%;
-  }
-
-  h3{
-      font-size: 1rem;
-  }
+  
 }

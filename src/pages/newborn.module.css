@@ -33,3 +33,134 @@
 .topContainer{
     font-family: 'Roboto';
 }
+.sectionTwo{
+    background-color: #34AED5;
+    padding-bottom: 6%; color: white;
+    
+}
+.subHeading{
+text-transform: uppercase; 
+    
+}
+/* latest article */
+.latestContent img{
+    width: 215px;
+    height: 215px;
+}
+.latestContent p{
+    font-size: 26px;
+    line-height: 1;
+}.uppercaseText{
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-size: 45px;
+    font-weight: 700;
+    width:50%
+}
+.blue{
+        color: #34b7eb;
+    }
+
+    /* search */
+.searchQuestion{
+    background-color: #34b7eb;
+    padding-top: 4%;
+ padding-bottom: 5%;
+ color: white;
+}.searchButton ::placeholder{
+    color:white;
+    opacity: 1;
+}.largeText{
+    font-size: 25px;
+    font-weight: 400;
+
+}.uppercaseText{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700;
+    width:50%;
+}
+.searchInput:focus{
+    outline:none;
+}
+.searchInput{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #34b7eb;
+    color: white;
+
+}
+.searchButton{
+    margin-top: -39%;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    color: #34b7eb;
+    font-size: 28px;
+}
+.teamText{
+    font-family: 'Roboto';
+    font-size: 22px;
+    color: #585858;
+}
+.cardContainer{
+    font-family: 'Roboto';
+}
+.paraText{
+    font-size: 20px;
+    font-family: 'Roboto';
+    width: 40%;
+    margin-top: 1%;
+}
+.hoverItem {
+
+    position: relative;
+  }
+.itemContent {
+    /*visiblity: hidden; */
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left:30%;
+    margin-top: -13px; /* approx adjustment for arrow */
+    margin-left: 10px; /* approx adjustment for arrow */
+  }
+.hoverItem a:hover + div {
+    cursor: pointer;
+    display: block;
+    /*visibility: visible; */
+    width: 280px;
+    line-height: 1;
+    /* margin-left: -10%; */
+    padding: 2px;
+    font-size: 5px;
+    text-align: center;
+    z-index: 999;
+    color: rgb(113, 157, 171);
+    background: rgb(255, 255, 255);
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
+    box-shadow: #333 -4px 4px 16px 2px;
+    -webkit-transition: opacity 100ms ease-in;
+    -o-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+  }
+  .itemContent:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #FFFFFF transparent transparent;
+    top: 22px;
+    left: 22px;
+  }
+  

@@ -16,9 +16,17 @@
     padding: 20px;
     cursor: pointer;
   }
-  .arrowprev,.arrownext{
+  .arrowprev{
     margin-top: 13%;
     font-size: 28px;
     color: gray;
     position: absolute;
+    margin-left: 5%;
+  }
+  .arrownext{
+    margin-top: 13%;
+    font-size: 28px;
+    color: gray;
+    position: absolute;
+    right: 5%;
   }
